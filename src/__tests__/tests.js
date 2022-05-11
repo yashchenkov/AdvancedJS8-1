@@ -25,5 +25,7 @@ test('testing addAll method', () => {
 
 	team.addAll(...characters);
 
-	expect(team.members.has(bowman) && team.members.has(knight) && team.members.has(undead)).toEqual(true);
-})
+	expect(team.members.has(bowman)).toBeTruthy(); 
+  expect(team.members.has(knight)).toBeTruthy();
+  expect(team.members.has(undead)).toBeTruthy();
+});
